@@ -1,18 +1,21 @@
+
+
+// src/pages/LandingPage.jsx
 import React from "react";
 
-import Navbar from "../components/navbar.jsx";
-import Hero from "../components/hero.jsx";
-import Footer from "../components/footer.jsx";
-import Trending from "../components/trending.jsx";
-import Mentorship from "../components/mentorship.jsx";
-import Internships from "../components/internships.jsx";
-import JoinCollege from "../components/joincollege.jsx";
-import Freshers from "../components/freshers.jsx";
-import Feedback from "../components/feedback.jsx";
-import Companies from "../components/companies.jsx";
-import About from "../components/about.jsx";
+import Navbar from "../components/landingpage/navbar.jsx";
+import Hero from "../components/landingpage/hero.jsx";
+import Footer from "../components/landingpage/footer.jsx";
+import Trending from "../components/landingpage/trending.jsx";
+import Mentorship from "../components/landingpage/mentorship.jsx";
+import Internships from "../components/landingpage/internships.jsx";
+import JoinCollege from "../components/landingpage/joincollege.jsx";
+import Freshers from "../components/landingpage/freshers.jsx";
+import Feedback from "../components/landingpage/feedback.jsx";
+import Companies from "../components/landingpage/companies.jsx";
+import About from "../components/landingpage/about.jsx";
 
-export default function App() {
+export default function LandingPage() {
   return (
     <div className="bg-white text-gray-800 min-h-screen">
       <Navbar />
@@ -29,6 +32,8 @@ export default function App() {
     </div>
   );
 }
+
+
 
 
 
