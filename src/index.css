@@ -1,4 +1,76 @@
+/* ===== Theme Variables (MATCHING YOUR FACULTY UI STYLE) ===== */
+:root {
+  --primary: #2563EB;        /* Main blue */
+  --primary-100: #E7EEFF;    /* Light blue (sidebar active bg) */
+  --bg-page: #F5F6FA;        /* Dashboard background */
+  --card-bg: #FFFFFF;        /* Card background */
+  --muted: #6B7280;          /* Muted gray text */
+  --border: #E5E7EB;         /* Light border color */
+  --success: #10B981;        /* Green */
+  --danger: #EF4444;         /* Red */
+}
+
+/* ===== Utility Classes ===== */
+.bg-page { background-color: var(--bg-page); }
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(16,24,40,0.04);
+}
+
+.muted { color: var(--muted); }
+
+/* Brand buttons */
+.brand-btn {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 9999px;
+}
+
+.brand-btn-outline {
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  color: var(--primary);
+  background: transparent;
+  border-radius: 9999px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==== Tailwind Imports ==== */
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Add to your index.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
